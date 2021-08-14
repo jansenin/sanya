@@ -1,0 +1,188 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: black;
+	background-image: url(resourses/background-poster.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.main-menu {
+	position: fixed;
+	width: 100%;
+	background: linear-gradient(90deg, black, red, black);
+	min-width: 1000px;
+	z-index: 100;
+}
+
+.menu-inner {
+	display: flex;
+	width: 100%;
+	height: 50px;
+	z-index: 100;
+}
+
+.a-parent {
+	width: 20%;
+	/*border-right: 1px solid white;*/
+	z-index: 100;
+	transition: 0.3s;
+}
+
+.a-parent:last-child {
+	border: none;
+}
+
+.a-parent a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	height: 100%;
+	z-index: 100;
+}
+
+.sub-menu-option-text {
+	font-size: 30px;
+	border: 1px solid red;
+	background: black;
+	color: red;
+	border-radius: 100px;
+	transition: 0.3s;
+}
+
+.sub-menu-options a {
+	padding: 10px;
+}
+
+.sub-menu-options a:hover .sub-menu-option-text {
+	background: red;
+	color: black;
+	border: 1px black solid;
+}
+
+.a-parent .sub-menu-options {
+	opacity: 0;
+	transition: .3s;
+	transform: translateY(-100%);
+	z-index: -100;
+}
+
+.a-parent:hover .sub-menu-options {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.a-parent:hover {
+	background: red;
+}
+
+.content {
+	padding-top: 50px;
+}
+
+p {
+	color: white;
+	font-size: 25px;
+}
+
+.main-text {
+    width: 50%;
+	min-width: 600px;
+}
+
+.main-main-content {
+    display: flex;
+	justify-content: space-around;
+	min-width: 1000px;
+}
+
+.story-text {
+	width: 50%;
+	min-width: 600px;
+}
+
+.story-main-content {
+	display: flex;
+	justify-content: space-around;
+	min-width: 1000px;
+}
+
+.ost-text {
+	width: 50%;
+	min-width: 600px;
+}
+
+.ost-main-content {
+	display: flex;
+	justify-content: space-around;
+	min-width: 1000px;
+}
+
+.characters-text {
+	width: 50%;
+	min-width: 600px;
+}
+
+.characters-main-content {
+	display: flex;
+	justify-content: space-around;
+	min-width: 1000px;
+}
+
+.posters-main-content {
+	display: flex;
+	justify-content: space-around;
+	min-width: 1000px;
+}
+
+.posters-pictures {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 600px;
+}
+
+.posters-pictures .image-container {
+	margin-top: 100px;
+}
+
+.posters-pictures .image-container:first-child {
+	margin-top: 100px;
+}
+
+.posters-pictures .image-container:last-child {
+	margin-bottom: 100px;
+}
+
+.posters-pictures .image-container img {
+	width: 20%;
+	min-width: 600px;
+	border: 3px solid white;
+}
+
+.image-container {
+	transition: 0.5s;
+}
+
+.image-container img {
+	transition: 0.5s;
+	width: 100%;
+}
+
+.image-container:hover img {
+	transform: scale(1.2, 1.2) rotate(10deg);
+}
+
+.posters-main-content {
+	display: flex;
+	justify-content: center;
+}
